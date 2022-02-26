@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="script.js"></script>
+  
+    
+
+<div class="temp_calculator">
+    <h4 class="title">Temperature Converter</h4>
+      <form action="" name="form">
+        <div class="temp_calculator_inputs">
+          <div class="calculator_value">
+            <label for="">Enter Input:</label>
+            <input type="number" name="value" id="input_value">
+            <!-- <input type="text" placeholder="0" name="value" id="input_value"> -->
+          </div>
+          <div class="calculator_input">
+            <label for="">From:</label>
+            <select name="input" id="input">
+              <option value="celsius">Celsius </option>
+              <option value="fahrenheit">Fahrenheit </option>
+              <option value="kelvin">Kelvin </option>
+            </select>
+          </div>
+          <div class="calculator_input">
+            <label for="">To:</label>
+            <select name="output" id="output">
+              <option value="celsius">Celsius </option>
+              <option value="fahrenheit">Fahrenheit </option>
+              <option value="kelvin">Kelvin</option>
+            </select>
+          </div>          
+        </div>
+        <button type="button" id="clear" class="cal-btn" onclick="reset()">Clear</button>
+        <button type="button" id="convert temperature" class="cal-btn" onclick="convertTemperature()">Convert</button>
+        <div class="result_area">
+          <label for="">Output:</label>
+          <input type="text" value="" id="result">
+        </div>
+      </form>
+    </div>
+</body>
+</html>
